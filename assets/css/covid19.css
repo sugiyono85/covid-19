@@ -1,0 +1,26 @@
+.splash-screen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    background-color: white;
+}
+
+.loader {
+    width: 50px;
+    height: 50px;
+    border: 4px solid black;
+    border-left-color: white;
+    border-radius: 50%;
+    animation: 1s rotate infinite;
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}

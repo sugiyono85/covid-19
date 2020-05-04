@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="DATA TERBARU PENYEBARAN COVID-19 DI INDONESIA">
+    <link rel="icon" type="image/png" href="https://cdn.pixabay.com/photo/2020/04/19/07/12/coronavirus-5062180_960_720.png">
+    <title>LIVE DATA COVID-19 INDONESIA</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../assets/css/covid19.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light px-md-5">
+        <a href="#" class="navbar-brand">LIVE DATA COVID-19 INDONESIA</a>
+    </nav>
+
+    <div class="container pt-md-4 pt-3">
+        <div class="row">
+            <div class="col-md-4 py-3 text-center">
+                <div class="card">
+                    <div class="card-body">
+                        <h6>POSITIF</h6>
+                        <h1 id="total-positive">0</h1>
+                        <h6>Orang</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 py-3 text-center">
+                <div class="card">
+                    <div class="card-body">
+                        <h6>SEMBUH</h6>
+                        <h1 id="total-recovered">0</h1>
+                        <h6>Orang</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 py-3 text-center">
+                <div class="card">
+                    <div class="card-body">
+                        <h6>MENINGGAL</h6>
+                        <h1 id="total-deaths">0</h1>
+                        <h6>Orang</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 py-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">KURVA</h5>
+                        <canvas id="chart-cases"></canvas>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 py-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Kasus Per Hari</h5>
+                        <ul class="nav nav-tabs" id="tabs" role="tablist">
+                            <li class="nav-item">
+                                <a href="#addition-positive" class="nav-link active" id="tab-addition-positive" data-toggle="tab" role="tab" aria-controls="addition-positive" aria-selected="true">Positif</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#addition-recovered" class="nav-link" id="tab-addition-recovered" data-toggle="tab" role="tab" aria-controls="addition-recovered" aria-selected="false">Sembuh</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#addition-deaths" class="nav-link" id="tab-addition-deaths" data-toggle="tab" role="tab" aria-controls="addition-deaths" aria-selected="false">Meninggal</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="tab-content">
+                            <div class="tab-pane fade show active" id="addition-positive" role="tabpanel" aria-labelledby="">
+                                <canvas id="chart-addition-positive"></canvas>
+                            </div>
+                            <div class="tab-pane fade" id="addition-recovered" role="tabpanel" aria-labelledby="">
+                                <canvas id="chart-addition-recovered"></canvas>
+                            </div>
+                            <div class="tab-pane fade" id="addition-deaths" role="tabpanel" aria-labelledby="">
+                                <canvas id="chart-addition-deaths"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 py-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="text-center">Persentase (%)</h5>
+                        <canvas id="chart-persentase"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="page-footer font-small bg-dark text-white text-center pt-4 pb-3">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <h6>Made with &hearts; by <a class="text-primary" href="https://github.com/dnridwn/dnridwn.github.io">Den Ridwan Saputra</a></h6>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="splash-screen">
+        <div class="loader"></div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script src="../assets/js/covid19.js"></script>
+</body>

@@ -1,0 +1,29 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.bg-custom {
+    background-color: #000B23;
+    background-image: linear-gradient(to right, #000B23,#004371);
+}
+
+.middle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.middle > * {
+    width: fit-content;
+}
+
+.middle-both {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-2 {
+    top: .5rem;
+}

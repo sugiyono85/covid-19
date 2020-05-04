@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramadhan</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="../assets/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../assets/css/ramadhan.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-dark navbar-expand-lg px-4 px-md-5 bg-custom">
+        <a href="#" class="navbar-brand text-uppercase font-ramadhan">saputra</a>
+    </nav>
+
+    <div class="bg-custom">
+        <div class="container">
+            <div class="row min-vh-75" id="main">
+                <div class="col-lg-6 py-5 my-5 my-md-0 middle">
+                    <div class="text-center text-md-left">
+                        <h2 class="text-white text-uppercase">ramadhan 1441 H</h2>
+                        <p class="text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore dolorem, provident eius fugiat veniam a. Dolor ea, tempora voluptatibus commodi aspernatur minus repellendus, doloribus nostrum, harum aliquid eos voluptates est.</p>
+                        <a href="#jadwal-shalat-imsak" class="btn btn-primary text-uppercase mt-4">jadwal shalat & imsak <i class="fa fa-chevron-circle-down"></i></a>                            
+                    </div>
+                </div>
+                <div class="col-lg-6 py-5 text-right d-none d-sm-flex middle">
+                    <img src="../assets/img/ramadhan.png" alt="" class="w-100">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-white">
+        <div class="container" id="jadwal-shalat-imsak">
+            <div class="min-vh-75 py-5">
+                <h3 class="text-center text-capitalize my-2 my-lg-4">jadwal shalat & imsak</h3>
+                <div class="row">
+                    <div class="col-md-6 col-lg-4 ml-auto">
+                        <form action="" class="form-inline py-2 py-lg-4 middle-both">
+                            <div class="form-group">
+                                <input type="text" class="form-control mt-3 mt-md-0" placeholder="Nama kota">
+                            </div>
+                            <button class="btn btn-primary ml-3" id="btn-search-shalat"><i class="fa fa-search"></i></button>
+                        </form>
+                    </div>
+                </div>
+                <h4 class="text-center text-md-left"><i class="fa fa-globe"></i> <span id="city-name">pilih kota</span></h4>
+                <div class="row middle-both">
+                    <div class="col-lg-4 col-md-6 p-4">
+                        <div class="card shadow">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <h5 class="card-title">Imsak</h5>
+                                        <h2 class="d-inline text-primary" id="text-imsak">00:00</h2>
+                                        <p class="text-uppercase">wib</p>
+                                    </div>
+                                    <div class="col-6">
+                                        <img src="../assets/img/clock.png" alt="" class="w-100">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 p-4">
+                        <div class="card shadow">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <h5 class="card-title">Subuh</h5>
+                                        <h2 class="d-inline text-primary" id="text-subuh">00:00</h2>
+                                        <p class="text-uppercase">wib</p>
+                                    </div>
+                                    <div class="col-6">
+                                        <img src="../assets/img/clock.png" alt="" class="w-100">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 p-4">
+                        <div class="card shadow">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <h5 class="card-title">Dzuhur</h5>
+                                        <h2 class="d-inline text-primary" id="text-dzuhur">00:00</h2>
+                                        <p class="text-uppercase">wib</p>
+                                    </div>
+                                    <div class="col-6">
+                                        <img src="../assets/img/clock.png" alt="" class="w-100">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 p-4">
+                        <div class="card shadow">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <h5 class="card-title">Ashar</h5>
+                                        <h2 class="d-inline text-primary" id="text-ashar">00:00</h2>
+                                        <p class="text-uppercase">wib</p>
+                                    </div>
+                                    <div class="col-6">
+                                        <img src="../assets/img/clock.png" alt="" class="w-100">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 p-4">
+                        <div class="card shadow">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <h5 class="card-title">Maghrib</h5>
+                                        <h2 class="d-inline text-primary" id="text-maghrib">00:00</h2>
+                                        <p class="text-uppercase">wib</p>
+                                    </div>
+                                    <div class="col-6">
+                                        <img src="../assets/img/clock.png" alt="" class="w-100">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 p-4">
+                        <div class="card shadow">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <h5 class="card-title">Isya</h5>
+                                        <h2 class="d-inline text-primary" id="text-isya">00:00</h2>
+                                        <p class="text-uppercase">wib</p>
+                                    </div>
+                                    <div class="col-6">
+                                        <img src="../assets/img/clock.png" alt="" class="w-100">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-dark text-white">
+        <div class="container">
+            <div class="row pt-5 pb-2">
+                <div class="col-md-4 pt-3">
+                    <h5 class="mb-3 text-center text-md-left text-uppercase">contact</h5>
+                    <form action="">
+                        <div class="form-group">
+                            <label for="">Nama</label>
+                            <input type="text" name="" id="" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="">Email</label>
+                            <input type="email" name="" id="" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="">Pesan</label>
+                            <textarea name="" id="" rows="5" class="form-control"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary text-capitalize">Kirim</button>
+                    </form>
+                </div>
+                <div class="col-md-4 col-lg-5 pt-3 text-center text-md-left">
+                    <h5 class="text-uppercase">API<span class="text-lowercase">s</span></h5>
+                    <ul class="list-unstyled">
+                        <li><a href="" class="text-white text-capitalize">Fatimah Api <small><i class="fa fa-external-link"></i></small></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-lg-3 p-3 text-center">
+                    <h5 class="text-uppercase">connect with</h5>
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><a href="" class="text-white"><i class="fa fa-2x fa-facebook-official"></i></a></li>
+                        <li class="list-inline-item"><a href="" class="text-white"><i class="fa fa-2x fa-instagram"></i></a></li>
+                        <li class="list-inline-item"><a href="" class="text-white"><i class="fa fa-2x fa-twitter"></i></a></li>
+                        <li class="list-inline-item"><a href="" class="text-white"><i class="fa fa-2x fa-github"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-12 text-center">
+                    <hr>
+                    <h6>&copy; 2020 Copyright</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="position-fixed d-flex w-100 justify-content-center align-items-center top-2">
+        <div class="toast" id="myToast" data-autohide="false">
+            <div class="toast-header">
+                <strong class="mr-auto text-primary">Memuat</strong>
+                <small class="text-muted">Sekarang</small>
+                <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="toast-body"> Sedang memuat data... </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="../assets/js/ramadhan.js"></script>
+</body>
+</html>
